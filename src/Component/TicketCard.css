@@ -1,0 +1,55 @@
+
+.ticket-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+}
+
+.line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styles for user id */
+.user-id {
+    font-size: 10px;
+    color: #888;
+}
+
+/* Styles for the image */
+.ticket-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    display: block;
+}
+
+/* Styles for small icons */
+.icon.small {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .line {
+        grid-template-columns: 1fr;
+    }
+
+    .ticket-image.small {
+        max-width: 24px;
+        max-height: 24px;
+    }
+
+    /* Adjust the icon size for small screens */
+    .icon.small {
+        max-width: 12px;
+        max-height: 12px;
+    }
+}
+
